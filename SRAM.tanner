@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design SRAM -cell PROPOSED_8t -type schematic -newwindow
+window move -left 130 -top 130 -width 1025 -height 432 -undock -max 
+window fit -x0 2083 -y0 -2312 -x1 8858 -y1 994 -units iu
+workspace dockinglayout load -file dockinglayout.xml
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8
